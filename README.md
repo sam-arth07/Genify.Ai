@@ -55,5 +55,4 @@ This Python script allows users to input requirements and generates applications
 3. Check the generated files in the output folder.
   
 4. Additional the script will automatically zip the generated file structure with the same name and in the same directory.
-Feel free to explore and adapt this script to suit your needs! 🚀
 
