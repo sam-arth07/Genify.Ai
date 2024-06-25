@@ -6,6 +6,7 @@ This Python script allows users to input requirements and generates applications
 
 1. **Run the Script:**
    - Make sure you have Python installed on your system.
+   - Set the variable``` GOOGLE_API_KEY ``` to the api key that you have generated from Gemini Ai.
    - Execute the `main.py` script using the following command:
      ```
      python main.py
