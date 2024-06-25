@@ -10,7 +10,7 @@ from IPython.display import display
 from IPython.display import Markdown
 
 # Initialize Gemini API (replace 'your-api-key' with an actual API key)
-GOOGLE_API_KEY = 'AIzaSyCCFVSBduDGNH23PLGgwHdl2Gk8bYXg_aw'
+GOOGLE_API_KEY = 'your_gemini_api_key'
 
 def to_markdown(text):
     text= text.replace('•', '  *')
