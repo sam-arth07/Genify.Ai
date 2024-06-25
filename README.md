@@ -10,7 +10,6 @@ This Python script allows users to input requirements and generates applications
    - Execute the `main.py` script using the following command:
      ```
      python main.py
-     
      ```
 
 2. **User Prompts:**
@@ -47,7 +46,7 @@ This Python script allows users to input requirements and generates applications
 ## Example Usage
 
 1. Run the script:
-     ``` python main.py ```
+      ``` python main.py ```
    
 2. Answer the prompts:
    - Choose the application type (e.g., "portfolio_site").
