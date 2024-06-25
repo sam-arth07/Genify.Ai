@@ -46,30 +46,6 @@ chat = model.start_chat(history=[])
 def get_user_input():
     user_input = input("What application do you want to build/generate? ")
     return user_input
-# Function to call Gemini AI and get the file structure
-# def get_file_structure(prompt):
-#     # response = requests.post(GEMINI_API_URL, headers=headers, json=data)
-#     response = generate_content(prompt=prompt)
-#     response_json = response.json()
-#     file_structure = response_json['content']
-#     return json.loads(file_structure)  # Assuming the response is JSON formatted
-# # Function to generate files based on the file structure
-# def generate_files(file_structure, prompt):
-#     for file_path, file_content_prompt in file_structure.items():
-#         response = generate_content(prompt)
-#         response_json = response.json()
-#         file_content = response_json['content']
-#         os.makedirs(os.path.dirname(file_path), exist_ok=True)
-#         with open(file_path, 'w') as f:
-#             f.write(file_content)
-
-# Function to zip the generated files
-def zip_files(output_filename='generated_application.zip', folder='.'):
-    with zipfile.ZipFile(output_filename, 'w') as zipf:
-        for root, dirs, files in os.walk('.'):
-            for file in files:
-                if file != output_filename:  # Avoid zipping the zip file itself
-                    zipf.write(os.path.join(root, file))
 
 def generate_content(prompt,stream=True):
     file_format = """
